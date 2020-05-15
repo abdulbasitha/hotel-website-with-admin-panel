@@ -1,0 +1,53 @@
+/* Video Area css
+============================================================================================ */
+.video_area{
+    background: url(../img/video-bg.png) no-repeat scroll center center;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+    padding: 120px 0px 134px 0px;
+    &:before{
+        content: "";
+        background: rgba(0, 0, 0, .58);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .video_inner{
+        text-align: center;
+        a{
+            display: block;
+            padding-bottom: 30px;
+            i{
+                font-size: 74px;
+                line-height: 70px;
+                &:before{
+                    font-size: 74px;
+                    color: #fff;
+                }
+            }
+        }
+        h4{
+            color: $baseColor;
+            text-transform: uppercase;
+            font-family: $mon;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: .96px;
+            padding-bottom: 5px;
+        }
+        h5{
+            color: #fff;
+            text-transform: uppercase;
+            font-family: $mon;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: .96px;
+        }
+    }
+}
+/* End Video Area css
+============================================================================================ */

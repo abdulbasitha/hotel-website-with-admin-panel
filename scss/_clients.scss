@@ -1,0 +1,78 @@
+/* End Explor Room Area css
+============================================================================================ */
+.client_area{
+    padding-bottom: 95px;
+    &.client_three{
+        padding: 100px 0px;
+        .clients_slider{
+            padding-left: 50px;
+            padding-top: 0px;
+            border: none;
+            .item{
+                .media{
+                    .media-left{}
+                    .media-body{
+                        padding-right: 62px;
+                        h4{
+                            padding-top: 40px;
+                        }    
+                    }
+                }
+            }
+        }
+    }
+}
+.clients_slider{
+    border-top: 1px solid #e1e1e1;
+    padding-top: 80px;
+    .item{
+        .media{
+            .media-left{
+                padding-right: 75px;
+                padding-top: 20px;
+                img{
+                    width: auto;
+                }
+            }
+            .media-body{
+                padding-right: 128px;
+                p{
+                    line-height: 35px;
+                    color: $pfont;
+                    font-family: $lato;
+                    font-style: italic;
+                    font-size: 22px;
+                    letter-spacing: .66px;
+                    i{
+                        padding-right: 20px;
+                        color: $baseColor;
+                        font-size: 100px;
+                        font-family: "arial";
+                        font-style: normal;
+                        position: relative;
+                        bottom: -42px;
+                        font-weight: bold;
+                    }
+                }
+                h4{
+                    color: $baseColor;
+                    font-family: $mon;
+                    font-weight: bold;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    letter-spacing: .54px;
+                    padding: 30px 0px 10px 0px;
+                }
+                h5{
+                    font-size: 18px;
+                    color: #849bb3;
+                    font-family: $lato;
+                    font-style: italic;
+                    letter-spacing: .54px;
+                }    
+            }
+        }
+    }
+}
+/* End Explor Room Area css
+============================================================================================ */

@@ -1,0 +1,1008 @@
+/* Introduction Area css
+============================================================================================ */
+.introduction_area{
+    padding-bottom: 100px;
+    overflow: hidden;
+    &.intro_area2{
+        padding-bottom: 70px;
+        padding-top: 70px;
+        .introduction_inner{
+            .introduction_img{
+                position: relative;
+				width: 100%;
+                img{
+                    max-width: 100%;
+                    & + img{
+                        position: absolute;
+                        right: 35px;
+                        bottom: 0px;
+                    }
+                }
+            }
+            .introduction_left_text{
+                padding-right: 0px;
+                padding-top: 25px;
+                .intro_box_item_area{
+                    padding-top: 20px;
+                    .intro_box_item{
+                        text-align: center;
+                        position: relative;
+                        &:before{
+                            content: "";
+                            height: 84px;
+                            background: #d7d7d7;
+                            width: 1px;
+                            position: absolute;
+                            right: -8px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        i{
+                            color: #363636;
+                            line-height: 64px;
+                            font-size: 64px;
+                            &:before{
+                                font-size: 64px;
+                            }
+                        }
+                        h4{
+                            font-size: 16px;
+                            color: #363636;
+                            font-family: $mon;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            padding-top: 18px;
+                        }
+                    }
+                    .col-md-4{
+                        &:last-child{
+                            .intro_box_item{
+                                &:before{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.resort_story_area{
+        padding: 100px 0px;
+        .introduction_left_text{
+            h6{
+                font-size: 16px;
+                color: $dip;
+                font-family: $open;
+                font-style: italic;
+                letter-spacing: .48px;
+                padding-top: 45px;
+                padding-bottom: 30px;
+            }
+            .about_btn_b{
+                padding: 0px 33.5px;
+                line-height: 46px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+.introduction_inner{
+    .introduction_img{
+        display: inline-block;
+        position: relative;
+//        &:before{
+//            content: "";
+//            position: absolute;
+//            left: 0px;
+//            top: 0px;
+//            width: 100%;
+//            height: 100%;
+//            background: rgba(0, 0, 0, 0.4);
+//            opacity: 0;
+//            @include transition;
+//        }
+        img{
+            max-width: 100%;
+        }
+        &:hover{
+            &:before{
+                opacity: 1;
+            }
+        }
+    }
+    .introduction_left_text{
+        padding-right: 98px;
+        .intro_title{
+            padding-bottom: 35px;
+            p{
+                padding-bottom: 0px;
+            }
+        }
+        h4{
+            font-size: 18px;
+            color: $gray;
+            font-family: $mon;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+            letter-spacing: .54px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 26px;
+            font-family: $open;
+            color: $pfont;
+            letter-spacing: .225px;
+            padding-bottom: 30px;
+        }
+    }
+}
+/* End Introduction Area css
+============================================================================================ */
+
+/* Introduction Box Area css
+============================================================================================ */
+.introduction_box_area{
+    padding: 100px 0px;
+    .main_big_title{
+        padding-bottom: 60px;
+        h6{
+            font-size: 16px;
+            color: $dip;
+            font-family: $open;
+            font-style: italic;
+            letter-spacing: .48px;
+            padding: 35px 0px 13px 0px;
+        }
+        p{
+            padding-top: 0px;
+        }
+    }
+}
+.introduction_box{
+    
+}
+.introduction_item{
+    border: 2px solid #e9e9e9;
+    text-align: center;
+    padding: 30px 25px 40px 25px;
+    @include transition;
+    .intro_img{
+        height: 98px;
+        width: 98px;
+        border-radius: 50%;
+        text-align: center;
+        border: 1px solid $baseColor;
+        margin: auto;
+        line-height: 96px;
+        i{
+            color: $baseColor;
+            font-size: 64px;
+            line-height: 98px;
+            &:before{
+                font-size: 64px;
+            }
+        }
+    }
+    h4{
+        font-size: 16px;
+        font-family: $mon;
+        font-weight: bold;
+        color: #363636;
+        letter-spacing: .48px;
+        text-transform: uppercase;
+        padding: 28px 0px 15px 0px;
+        @include transition;
+        &:hover{
+            color: $baseColor;
+        }
+    }
+    p{
+        font-size: 15px;
+        color: $pfont;
+        font-family: $open;
+        line-height: 26px;
+        letter-spacing: .225px;
+    }
+    &:hover{
+        border-color: $baseColor;
+    }
+}
+/* End Introduction Box Area css
+============================================================================================ */
+
+/* Explor Room Area css
+============================================================================================ */
+.explor_room_area{
+    background: #f6f6f6;
+    padding: 100px 0px;
+    .explor_title{
+        padding-bottom: 55px;
+        .pull-right{
+            margin-top: 10px;
+            .about_btn_b{
+                line-height: 46px;
+            }
+        }
+    }
+    &.explor_slider_area{
+        position: relative;
+        z-index: 2;
+        &:before{
+            content: "";
+            background: $baseColor;
+            height: 505px;
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+        .explor_title{
+            padding-bottom: 41px;
+        }
+        .explor_slider{
+            .explor_slider{
+                text-align: center;
+                margin-top: 45px;
+                .owl-prev, .owl-next{
+                    height: 46px;
+                    width: 46px;
+                    text-align: center;
+                    font-size: 25px;
+                    color: #7e7e7e;
+                    border: 2px solid #d1d1d1;
+                    line-height: 41px;
+                    display: inline-block;
+                    cursor: pointer;
+                    @include transition;
+                    &:hover{
+                        background: $baseColor;
+                        color: #fff;
+                        border-color: $baseColor;
+                    }
+                }
+                .owl-prev{
+                    margin-right: 26px;
+                }
+                .owl-next{
+                    
+                }
+            }
+//            .item{
+//                .explor_item{
+//                    padding: 15px;
+//                    background: #fff;
+//                }
+//            }
+        }
+    }
+}
+.explor_room_item_inner{
+    
+}
+.explore_room_list{
+    .explor_room_item_inner{
+        margin-bottom: -50px;
+        overflow: hidden;
+        .explor_item{
+            margin-bottom: 50px;
+        }
+    }
+}
+.explor_item{
+    background: #fff;
+    .room_image{
+        position: relative;
+        display: block;
+        img{
+            max-width: 100%;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .40);
+            opacity: 0;
+            @include transition;
+        } 
+        &:hover{
+            &:before{
+                opacity: 1;
+            }
+        }
+    }
+    .explor_text{
+        overflow: hidden;
+        padding: 35px 35px 35px 35px;
+        box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.09);
+        h4{
+            font-size: 20px;
+            font-family: $mon;
+            font-weight: bold;
+            letter-spacing: .60px;
+            color: $dip;
+            text-transform: uppercase;
+            @include transition;
+            &:hover{
+                color: $baseColor;
+            }
+        }
+        ul{
+            padding-top: 15px;
+            padding-bottom: 25px;
+            position: relative;
+            margin-bottom: 22px;
+            &:before{
+                content: "";
+                background: #eeeeee;
+                height: 2px;
+                width: 53px;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+            }
+            li{
+                display: inline-block;
+                a{
+                    color: $pfont;
+                    font-family: $open;
+                    letter-spacing: .30px;
+                    font-size: 15px;
+                }
+            }
+        }
+        .explor_footer{
+            .pull-left{
+                h3{
+                    font-size: 20px;
+                    font-family: $mon;
+                    font-weight: bold;
+                    color: $dip;
+                    letter-spacing: .60px;
+                    padding-top: 10px;
+                    span{
+                        color: #a0a0a0;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .pull-right{
+                .book_now_btn{
+                    padding: 0px 13px;
+                    border: 2px solid $baseColor;
+                    line-height: 34px;
+                }
+            }
+        }
+    } 
+}
+/* End Explor Room Area css
+============================================================================================ */
+
+/* Fun Fact Area css
+============================================================================================ */
+.fun_fact_area{
+    background: #fff;
+    .fun_fact_box{
+        background: #fff;
+        box-shadow: 0px 3px 57px 0px rgba(0, 0, 0, 0.18);
+        padding: 50px 0px;
+        margin-top: -30px;
+        z-index: 5;
+        padding-left: 35px;
+        position: relative;
+        .col-md-3{
+            &:first-child{
+                .media{
+                    &:before{
+                        display: none;
+                    } 
+                    .media-left{
+                        h3{
+                            width: 88px;
+                        }
+                    }
+                }
+            }
+            &:nth-child(2){
+                .media{
+                    margin-left: -18px;
+                    .media-left{
+                        h3{
+                            width: 102px;
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                .media{
+                    margin-left: 10px;
+                    .media-left{
+                        h3{
+                            width: 106px;
+                        }
+                    }
+                }
+            }
+            &:last-child{
+                .media{
+                    .media-left{
+                        h3{
+                            width: 101px;
+                        }
+                    }
+                }
+            }
+        }
+//        .fun_box_item{
+//            position: relative;
+//            h3{
+//                display: inline-block;
+//                font-size: 55px;
+//                color: $baseColor;
+//                font-weight: bold;
+//                font-family: $mon;
+//                line-height: 50px;
+//            }
+//            h4{
+//                position: absolute;
+//                left: 60px;
+//                top: 0px;
+//            }
+//        }    
+        .media{
+            position: relative;
+            overflow: visible;
+            &:before{
+                content: "";
+                width: 1px;
+                background: #ebebeb;
+                position: absolute;
+                left: -30px;
+                top: 0px;
+                height: 100%;
+            }
+            .media-left{
+                vertical-align: middle;
+                padding-right: 20px;
+                position: relative;
+                h3{
+                    font-size: 55px;
+                    color: $baseColor;
+                    font-weight: bold;
+                    font-family: $mon;
+                    line-height: 50px;
+                }
+            }
+            .media-body{
+                vertical-align: middle;
+                position: relative;
+                h4{
+                    font-size: 15px;
+                    color: $pfont;
+                    font-family: $mon;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    &.yellow_fun_fact{
+        background: $baseColor;
+        box-shadow: 0px 3px 57px 0px rgba(0, 0, 0, 0.18);
+        .fun_fact_box{
+            margin-top: 0px;
+            box-shadow: none;
+            background: transparent;
+            .media{
+                &:before{
+                    display: none;
+                }
+                .media-left{
+                    h3{
+                        color: #fff;
+                    }
+                }
+                .media-body{
+                    h4{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &.yellow_subscrib{
+        background: $baseColor;
+        .fun_subscrib_inner{
+            padding: 36px 0px;
+            .left_text_subs{
+                p{
+                    color: #2a292b;
+                }
+            }
+            &:before{
+                content: "";
+                background: url(../img/icon/inbox-bg-icon-white.png) no-repeat scroll center center;
+                height: 128px;
+            }
+        }    
+        .input-group-btn{
+            .submit_btn_black{
+                margin-left: 16px;
+            }
+        }
+    } 
+    &.about_fun_fact{
+        padding-bottom: 100px;
+    }
+}
+
+.fun_subscrib_inner{
+    padding: 80px 32px;
+    position: relative;
+    &:before{
+        content: "";
+        background: url(../img/icon/inbox-bg-icon.png) no-repeat scroll center center;
+        width: 252px;
+        height: 155px;
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        transform: translateX(-50%);
+    }
+    .left_text_subs{
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: .48px;
+        }
+    }
+    .input-group{
+        input{
+            height: 52px;
+            border-radius: 0px;
+            box-shadow: none;
+            outline: none;
+            padding: 0px 30px;
+            background: #ffffff;
+            font-size: 15px;
+            font-family: $open;
+            letter-spacing: .45px;
+            color: $pfont;
+            @include placeholder{
+                font-size: 15px;
+                font-family: $open;
+                letter-spacing: .45px;
+                color: $pfont;
+            }
+            &:focus{
+                border-color: $baseColor;
+            }
+        }
+        .input-group-btn{
+            .submit_btn{
+                margin-left: 16px;
+            }
+        }
+    }
+}
+/* End Fun Fact Area css
+============================================================================================ */
+
+/* Choose Resot Area css
+============================================================================================ */
+.choose_resot_area{
+    background: #f6f6f6;
+    padding: 100px 0px;
+}
+.choose_resot_inner{
+    
+}
+.resot_list{
+    max-width: 400px;
+    ul{
+        li{
+            a{
+                font-size: 20px;
+                font-family: $mon;
+                font-weight: 500;
+                color: #a0a0a0;
+                letter-spacing: .60px;
+                position: relative;
+                padding-left: 35px;
+                line-height: 53px;
+                border-bottom: 1px solid #e4e4e4;
+                display: block;
+                @include transition;
+                i{
+                    position: absolute;
+                    left: 0px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @include transition;
+                    color: $baseColor;
+                }
+            }
+            &:last-child{
+                a{
+                    border: none;
+                }
+            }
+            &:hover{
+                a{
+                    color: $baseColor;
+                    i{
+                        left: 6px;
+                    }
+                }    
+            }
+        }
+    }
+}
+.choose_resot_slider{
+    .owl-prev, .owl-next{
+        height: 65px;
+        width: 65px;
+        background: #fff;
+        text-align: center;
+        line-height: 62px;
+        font-size: 28px;
+        color: #7e7e7e;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+        cursor: pointer;
+        @include transition;
+        &:hover{
+            background: $baseColor;
+            color: #fff;
+        }
+    }
+    .owl-prev{
+        left: 0px;
+    }
+    .owl-next{
+        right: 0px;
+    }
+}
+/* End Choose Resot Area css
+============================================================================================ */
+
+/* Discount Area css
+============================================================================================ */
+.discount_area{
+    background: url(../img/discount-bg.jpg) no-repeat fixed center center;
+    background-size: cover;
+    padding: 70px 0px 65px 0px;
+}
+.discount_inner{
+    display: flex;
+    .col-md-8{
+        display: flex;
+    }
+    .discount_right_content{
+        align-self: center;
+        flex: 1;
+        vertical-align: middle;
+        padding-left: 85px;
+        h5{
+            color: #fff;
+            font-family: $pts;
+            font-style: italic;
+            font-size: 25px;
+            letter-spacing: .75px;
+            position: relative;
+            display: inline-block;
+            &:before{
+                content: "";
+                width: 115px;
+                background: #fff;
+                height: 1px;
+                position: absolute;
+                right: -130px;
+                bottom: 5px;
+            }
+        }
+        h4{
+            font-size: 50px;
+            font-family: $mon;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 15px 0px 25px 0px;
+            span{
+                color: $baseColor;
+            }
+        }
+    }    
+}
+/* End Discount Area css
+============================================================================================ */
+
+/* Error Area css
+============================================================================================ */
+.error_area{
+    background: url(../img/error-bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    min-height: 1110px;
+    &:before{
+        content: "";
+        background: rgba(0, 0, 0, .45);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .error_inner_text_area{
+        display: flex;
+        min-height: 1110px;
+        .error_inner_text{
+            text-align: center;
+            flex: 1;
+            align-self: center;
+            vertical-align: middle;
+            position: relative;
+            z-index: 3;
+            h3{
+                font-size: 200px;
+                font-family: $open;
+                color: $baseColor;
+                font-weight: 800;
+                line-height: 150px;
+            }
+            h4{
+                font-size: 50px;
+                line-height: 53px;
+                font-family: $mon;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                color: #fff;
+                padding: 20px 0px 15px 0px;
+            }
+            h5{
+                font-size: 25px;
+                font-family: $mon;
+                font-weight: bold;
+                letter-spacing: .75px;
+                color: #fff;
+                padding-bottom: 55px;
+            }
+            .book_now_btn{
+                line-height: 70px;
+                padding: 0px 40px;
+                font-size: 22.75px;
+                font-family: $mon;
+                font-weight: bold;
+                letter-spacing: .445px;
+            }
+        }
+    }
+}
+/* End Error Area css
+============================================================================================ */
+
+/* Aminities Area css
+============================================================================================ */
+.aminities_area{
+    padding: 100px 0px;
+    .main_big_title{
+        text-align: left;
+        padding-bottom: 55px;
+        h2{
+            padding-bottom: 22px;
+            &:before{
+                display: none;
+            }
+        }
+        p{
+            padding-top: 0px;
+        }    
+    }
+}
+.aminities_list{
+    overflow: hidden;
+    .aminities_item{
+        width: calc(100% / 5);
+        float: left;
+        overflow: hidden;
+        background: #2f2f2f;
+        text-align: center;
+        padding: 60px 45px 65px 45px;
+        h4{
+            font-size: 18px;
+            font-family: $mon;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            letter-spacing: .36px;
+            padding: 25px 0px 17px 0px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 16px;
+            letter-spacing: .30px;
+            font-family: $open;
+            line-height: 26px;
+            color: $pfont;
+        }
+        &:nth-child(2){
+            background: #dfdfdf;
+            h4{
+                color: $dip;
+            }
+            p{
+                
+            }
+        }
+        &:nth-child(3){
+            background: $baseColor;
+            h4{
+                color: $dip;
+            }
+            p{
+                color: $dip;
+            }
+        }
+        &:nth-child(4){
+            h4{
+                color: #fff;
+            }
+        }
+        &:nth-child(5){
+            background: #676767;
+            p{
+                color: #dddddd;
+            }
+        }
+        &:nth-child(6){
+            width: 40%;
+            text-align: left;
+            background: #4a4a4a;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            display: flex;
+            .aminities_item_inn{
+                flex: 1;
+                align-self: center;
+                vertical-align: middle;
+            }
+            h4{
+                font-size: 32px;
+                color: #fff;
+                padding-top: 0px;
+                span{
+                    color: $baseColor;
+                }
+            }
+            p{
+                font-size: 15px;
+                line-height: 26px;
+                color: $pfont;
+            }
+        }
+        &:nth-child(7){
+            background: #dfdfdf;
+            h4{
+                color: $dip;
+            }
+            p{
+                color: $dip;
+            }
+        }
+        &:nth-child(8){
+            background: #46789e;
+            h4{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+        }
+    }
+}
+/* End Aminities Area css
+============================================================================================ */
+
+/* Comming Soon Area css
+============================================================================================ */
+.comming_soon_area{
+    background: url(../img/comming-soon-bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+    min-height: 963px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    &:before{
+        content: "";
+        background: rgba(0, 0, 0, .55);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .comming_soon_inner{
+        display: flex;
+        min-height: 963px;
+        .comming_soon_text{
+            flex: 1;
+            align-self: center;
+            vertical-align: middle;
+            text-align: center;
+            max-width: 770px;
+            margin: auto;
+            h3{
+                font-size: 70px;
+                color: #fff;
+                font-family: $pop;
+                padding-bottom: 75px;
+            }
+            p{
+                font-size: 22px;
+                line-height: 34px;
+                font-family: $pop;
+                font-weight: 500;
+                color: #fff;
+                padding-top: 56px;
+                padding-bottom: 25px;
+            }
+            .countdown{
+                .countdown-container{
+                    height: 170px;
+                    width: 170px;
+                    border-radius: 50%;
+                    background: $baseColor;
+                    position: relative;
+                    .countdown-heading{
+                        color: #fff;
+                        font-size: 20px;
+                        font-family: $mon;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        position: absolute;
+                        width: 100%;
+                        text-align: center;
+                        left: 0px;
+                        top: 70%;
+                        transform: translateY(-50%);
+                    }
+                    .countdown-value{
+                        padding: 0px;
+                        background: transparent;
+                        box-shadow: none;
+                        text-shadow: none;
+                        color: #fff;
+                        font-size: 65px;
+                        font-family: $mon;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        line-height: 130px;
+                    }
+                }
+            }
+            .fun_subscrib_inner{
+                padding: 0px 35px;
+                &:before{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* End Comming Soon Area css
+============================================================================================ */

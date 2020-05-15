@@ -1,0 +1,166 @@
+/* Main Button css
+============================================================================================ */
+.book_now_btn{
+    background: $baseColor;
+    color: #fff;
+    line-height: 36px;
+    display: inline-block;
+    padding: 0px 25px;
+    font-size: 14px;
+    font-family: $mon;
+    font-weight: bold;
+    letter-spacing: .28px;
+    position: relative;
+    z-index: 2;
+    transition-duration: 0.5s;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid $baseColor;
+    &:hover{
+        color: $baseColor;
+        background: transparent;
+        border-color: $baseColor;
+    }
+}
+.book_now_btn_black{
+    background: $dip;
+    color: #fff;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0px 25px;
+    font-size: 14px;
+    font-family: $mon;
+    font-weight: bold;
+    letter-spacing: .28px;
+    position: relative;
+    z-index: 2;
+    transition-duration: 0.5s;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid $dip;
+    &:hover{
+        color: $dip;
+        border-color: $dip;
+        background: transparent;
+    }
+}
+.slider_btn{
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 0px 27px;
+    line-height: 46px;
+    color: #fff;
+    font-size: 14px;
+    font-family: $mon;
+    text-transform: uppercase;
+    letter-spacing: .28px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    transition: all 300ms linear !important; 
+    &:hover{
+        color: #fff;
+        border-color: $baseColor;
+        background: $baseColor;
+    }
+}
+
+.about_btn_b{
+    display: inline-block;
+    border: 1px solid #8e8e8e;
+    padding: 0px 27px;
+    line-height: 46px;
+    color: #000;
+    font-size: 15px;
+    font-family: $mon;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .45px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    @include transition;
+    &:hover{
+        color: #fff;
+        border-color: $baseColor;
+        background: $baseColor;
+    }
+}
+.about_btn_wh{
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 0px 27px;
+    line-height: 46px;
+    color: #fff;
+    font-size: 15px;
+    font-family: $mon;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .45px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    @include transition;
+    &:hover{
+        color: $dip;
+        border-color: $dip;
+    }
+}
+
+.submit_btn{
+    background: $baseColor !important;
+    color: #fff;
+    border-radius: 0px;
+    border: none;
+    width: 160px;
+    padding: 0px;
+    height: 52px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .28px;
+    font-family: $mon;
+    font-weight: 600;
+    line-height: 50px;
+    position: relative;
+    z-index: 2;
+    @include transition;
+    font-weight: 600;
+    outline: none !important;
+    box-shadow: none !important;
+    display: inline-block;
+    border: 2px solid $baseColor;
+    &:hover, &:focus{
+        color: $baseColor;
+        border-color: $baseColor;
+        background: transparent !important;
+    }
+}
+
+.submit_btn_black{
+    background: $dip !important;
+    color: #fff;
+    border-radius: 0px;
+    border: none;
+    width: 160px;
+    padding: 0px;
+    height: 52px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .28px;
+    line-height: 52px;
+    position: relative;
+    z-index: 2;
+    @include transition;
+    font-weight: 600;
+    outline: none !important;
+    box-shadow: none !important;
+    display: inline-block;
+    border: 2px solid $dip;
+    &:hover, &:focus{
+        color: $dip;
+        border-color: $dip;
+        background: transparent !important;
+    }
+}
+/* Main Button css
+============================================================================================ */

@@ -1,0 +1,280 @@
+/* Gallery Area css
+============================================================================================ */
+.our_resort_gallery_area{
+    background: $baseColor;
+    padding: 100px 30px 0px 30px;
+    padding-bottom: 248px;
+    
+}
+.resort_gallery_inner{
+    margin-top: -247px;
+    padding: 0px 30px;
+    margin-bottom: 200px;
+    position: relative;
+    .owl-prev, .owl-next{
+        position: absolute;
+        bottom: -115px;
+        transform: translateX(-50%);
+        height: 46px;
+        width: 46px;
+        left: 50%;
+        text-align: center;
+        line-height: 40px;
+        border: 2px solid #d1d1d1;
+        color: #7e7e7e;
+        font-size: 25px;
+        @include transition;
+        cursor: pointer;
+        &:hover{
+            color: $baseColor;
+            border-color: $baseColor;
+        }
+    }
+    .owl-prev{
+        margin-left: -38px;
+    }
+    .owl-next{
+        margin-left: 38px;
+    }
+    &.resort_g_full{
+        padding: 0;
+        margin: 0px;
+    }
+}
+.resort_gallery, .resort_full_gallery{
+    .item{
+        position: relative;
+        .resort_g_hover{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            padding: 10px;
+            opacity: 0;
+            @include transition;
+            .resort_hover_inner{
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, .40);
+                position: relative;
+                a{
+                    float: right;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                    color: #fff;
+                    font-size: 20px;
+                    transform: scale(0);
+                    @include transition;
+                }
+                h5{
+                    position: absolute;
+                    left: 30px;
+                    bottom: 20px;
+                    opacity: 0;
+                    color: #fff;
+                    z-index: 2;
+                    @include transition;
+                    font-family: $mon;
+                    font-weight: normal;
+                    font-size: 18px;
+                    letter-spacing: .36px;
+                }
+            }
+        }
+        &:hover{
+            .resort_g_hover{
+                opacity: 1;
+                .resort_hover_inner{
+                    a{
+                        transform: scale(1);
+                    }
+                    h5{
+                        bottom: 30px;
+                        opacity: 1;
+                    }    
+                }
+            }
+        }
+    }
+}
+/* End Galley Area css
+============================================================================================ */
+
+/* Galley Two Column Area css
+============================================================================================ */
+.grid_gallery_area{
+    padding: 100px 0px;
+}
+.grid_gallery_inner{
+    margin-bottom: -30px;
+    overflow: hidden;
+    clear: both;
+    &.cobage_gallery_inner{
+        margin-bottom: -10px;
+    }
+    .gallery_filter{
+        text-align: center;
+        padding-bottom: 55px;
+        li{
+            display: inline-block;
+            margin-right: 52px;
+            a{
+                font-size: 16px;
+                font-family: $mon;
+                font-weight: bold;
+                letter-spacing: .48px;
+                text-transform: uppercase;
+                color: #a0a0a0;
+                position: relative;
+                @include transition;
+                &:before{
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    position: absolute;
+                    bottom: -1px;
+                    background: $baseColor;
+                    opacity: 0;
+                    @include transition;
+                }
+            }
+            &:hover, &.active{
+                a{
+                    color: $baseColor;
+                    &:before{
+                        opacity: 1;
+                    }
+                }
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }    
+}
+.grid_gallery_item{
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 3;
+    &:before{
+        content: "";
+        background: rgba(0, 0, 0, .4);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+        @include transition;
+    }
+    .resort_g_hover{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        padding: 10px;
+        opacity: 0;
+        @include transition;
+        .resort_hover_inner{
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, .40);
+            position: relative;
+            a{
+                float: right;
+                margin-top: 20px;
+                margin-right: 20px;
+                color: #fff;
+                font-size: 20px;
+                transform: scale(0);
+                @include transition;
+                z-index: 2;
+                position: relative;
+            }
+            h5{
+                position: absolute;
+                left: 30px;
+                bottom: 20px;
+                opacity: 0;
+                color: #fff;
+                z-index: 2;
+                @include transition;
+                font-family: $mon;
+                font-weight: normal;
+                font-size: 18px;
+                letter-spacing: .36px;
+            }
+        }
+    }
+    &:hover{
+        &:before{
+            opacity: 1;
+        }
+        .resort_g_hover{
+            opacity: 1;
+            .resort_hover_inner{
+                a{
+                    transform: scale(1);
+                }
+                h5{
+                    bottom: 30px;
+                    opacity: 1;
+                }    
+            }
+        }
+    }
+    img{
+        max-width: 100%;
+    }
+}
+.cobage_g_masonary{
+    margin-left: -5px;
+    margin-right: -5px;
+    .col-md-3{
+        padding: 0px 5px;
+    }
+    .col-md-6{
+        padding: 0px 5px;
+    }
+    .grid_gallery_item{
+        margin-bottom: 10px;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+/* End Galley Two Column Area css
+============================================================================================ */
+
+
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}

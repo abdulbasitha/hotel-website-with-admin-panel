@@ -1,0 +1,72 @@
+/* Banner Area css
+============================================================================================ */
+.banner_area{
+    background: url(../img/banner/blog-banner-bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &:before{
+        content: "";
+        background: rgba(0, 0, 0, .5);
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+.banner_inner_content{
+    position: relative;
+    padding: 241px 0px 111px 0px;
+    h3{
+        font-size: 48px;
+        font-family: $mon;
+        font-weight: 600;
+        color: #fff;
+        padding-bottom: 10px;
+    }
+    ul{
+        li{
+            display: inline-block;
+            a{
+                font-size: 13px;
+                font-family: $mon;
+                font-weight: bold;
+                letter-spacing: .39px;
+                text-transform: uppercase;
+                color: #fff;
+                padding-right: 25px;
+                position: relative;
+                @include transition;
+                &:before{
+                    content: "\f105";
+                    position: absolute;
+                    left: -16px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font: normal normal normal 14px/1 FontAwesome;
+                    @include transition;
+                }
+            }
+            &:first-child{
+                a{
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+            &:last-child{
+                a{
+                    padding-right: 0px;
+                }
+            }
+            &:hover, &.active{
+                a{
+                    color: $baseColor;
+                }
+            }
+        }
+    }
+}
+/* End Banner Area css
+============================================================================================ */

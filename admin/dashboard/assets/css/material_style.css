@@ -1,0 +1,214 @@
+/*
+ *  Document   : material_style.css
+ *  Author     : RedStar Theme
+ *  Description: This style sheet is used for customize material design components.
+ 
+ 
+ 				[Table Of Content]
+ 				
+ 				1. MENU
+ 				2. TABLE
+ 				3. BADGES
+*/
+
+@font-face {
+   font-family: 'Material Icons';
+   font-style: normal;
+   font-weight: 400;
+   src: url(../plugins/material-icons/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+   src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(../plugins/material-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+        url(../plugins/material-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
+        url(../plugins/material-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+
+
+/**********************************
+			1. MENU
+**********************************/
+.menuBackground {
+   background: white;
+   height: 148px;
+   width: 100%;
+}
+
+.menuBar {
+   box-sizing: border-box;
+   background: #0080c0;
+   color: white;
+   width: 100%;
+   height: 64px;
+   padding: 16px;
+}
+
+/**********************************
+			2. TABLE
+**********************************/
+.ml-table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+.mdl-data-table thead {
+    background: #FAFAFA;
+}
+.mdl-data-table{
+	width: 100% !important;
+}
+.ml-table-bordered>tbody>tr>td, .ml-table-bordered>thead>tr>td {
+    border: 1px solid #F0F0F0;
+}
+
+/**********************************
+			3. BADGES
+**********************************/
+.badges .ml-card-holder .demo-badge-3[data-badge]:after {
+    background-color: #9c27b0;
+}
+
+.mdl-badge .demo-badge-3[data-badge]:after{
+	 background-color: #9c27b0;
+}
+
+
+.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet {
+    padding: 15px 10px 15px 20px;
+}
+.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet:hover {
+    background: rgba(0,0,0,.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.wrapper {
+   box-sizing: border-box;
+   position: absolute;
+   right: 16px;
+}
+
+.mdl-tabs__tab {
+    text-decoration: none !important;
+}
+.mdl-textfield__label:after{
+	bottom: 13px !important;
+}
+
+
+.mdl-gridcell{
+	background: #bdbdbd;
+  padding: 30px 0;
+  text-align: center;
+  color: #424242;
+  font-weight: bold;
+  margin: 8px;
+}
+.mdl-foo{
+  background:black;
+  padding: 5px;
+}
+.txt-width{
+	width: 100% !important;
+	max-width: 500px !important;
+}
+.full-width{
+	width: 100% !important;
+}
+.select-width{
+	width: 100% !important;
+	max-width: 300px !important;
+}
+.getmdl-select .mdl-icon-toggle__label {
+    float: right;
+    margin-top: -30px;
+    color: rgba(0,0,0,0.4);
+}
+.mdl-button--fab:focus {
+    outline: none !important;
+}
+.mdl-button--icon:focus {
+    outline: none !important;
+}
+.mdl-textfield__label {
+    color: #AAAAAA !important;
+    font-size: 13px !important;
+}
+.mdl-textfield__input{
+    border-bottom: 1px solid #a6aeb1 !important;
+}
+.mdl-textfield__label:after{
+    background-color: #49cdd0;
+}
+.tab-left-side{
+	justify-content: flex-start !important;
+}
+.tab-right-side{
+	justify-content: flex-end !important;
+}
+.page-header.navbar .page-logo{
+	line-height: 1.7 !important;
+}
+.txt-full-width {
+    width: 100% !important;
+}
+.menuBar .mdl-button .material-icons {
+    color: #ffffff;;
+}
+.mdl-js-button {
+	right: 10px;
+}
+.mdl-menu__item{
+	font-size: 12px;
+}
+.mdl-menu__item .material-icons{
+	padding-right: 10px;
+    vertical-align: middle;
+}
+.mdl-cell {
+    float: left;
+}
+#headerSettingButton {
+    color: #ffffff;
+}
+.mdl-tabs__tab.tabs_three {
+    width: calc(100% / 3);
+}
+.mdl-tabs__panel table tr:first-child th {
+    border: 0;
+}
+.mdl-progress{
+	width: 100% !important;
+}
+.dtp .dtp-buttons{
+	text-align: center !important;
+}
+.dtp-buttons button{
+	margin-left: 10px;
+}
+
+    

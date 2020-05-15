@@ -1,0 +1,321 @@
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration:none;
+    &:hover, &:focus{
+       text-decoration:none;
+       outline: none;
+    }
+}
+.row.m0{
+    margin: 0px;
+}
+.p0{
+    padding: 0px;   
+}
+body{
+    line-height: 24px;
+    font-size: 14px;
+    font-family: $open; 
+    color: $pfont;
+}
+body, p, h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    padding: 0px;
+}
+#success{
+    display: none;
+}
+#error{
+    display: none;
+}
+
+.display_table{
+    display: table;
+    width: 100%;
+}
+.display_table_row{
+    display: table-row;
+}
+.display_table_cell{
+    display: table-cell;
+    float: none !important;
+}
+
+iframe{
+    border: none;
+}
+i{
+    &:before{
+        margin-left: 0px !important;
+    }
+}
+
+/* Main title css
+============================================================================================ */
+.intro_title{
+    h2{
+        font-size: 32px;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $baseColor;
+        letter-spacing: .96px;
+        position: relative;
+        padding-bottom: 15px;
+        span{
+            color: $dip;
+        }
+        &:before{
+            content: "";
+            background: $dip;
+            width: 70px;
+            height: 1px;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+    p{
+        color: $dip;
+        font-family: $open;
+        font-style: italic;
+        font-size: 16px;
+        letter-spacing: .48px;
+        padding-top: 30px;
+    }
+}
+
+.left_ex_title{
+    h2{
+        font-size: 32px;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $baseColor;
+        letter-spacing: .96px;
+        position: relative;
+        span{
+            color: $dip;
+        }
+    }
+    p{
+        font-size: 14px;
+        color: #a0a0a0;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .42px;
+        padding-top: 10px;
+    }
+}
+.left_wh_title{
+    h2{
+        font-size: 32px;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: .96px;
+        position: relative;
+        padding-bottom: 10px;
+        span{
+            color: $dip;
+        }
+    }
+    p{
+        font-size: 14px;
+        color: #fff;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .42px;
+    }
+}
+
+.middle_title{
+    text-align: center;
+    padding-bottom: 45px;
+    h2{
+        color: $dip;
+        font-family: $mon;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: .96px;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+        position: relative;
+        span{
+            color: #fff;
+        }
+        &:before{
+            content: "";
+            width: 70px;
+            background: #000;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            bottom: 0px;
+            position: absolute;
+        }
+    }
+    p{
+        font-size: 16px;
+        font-family: $open;
+        letter-spacing: .48px;
+        color: $dip;
+        padding-top: 25px;
+    }    
+}
+.center_title{
+    padding-bottom: 60px;
+    text-align: center;
+    h2{
+        font-size: 32px;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $baseColor;
+        letter-spacing: .96px;
+        position: relative;
+        padding-bottom: 10px;
+        span{
+            color: $dip;
+        }
+    }
+    p{
+        font-size: 16px;
+        line-height: 28px;
+        font-family: $open;
+        font-style: italic;
+        color: $dip;
+        letter-spacing: .48px;
+    }
+}
+.center_title{
+    padding-bottom: 60px;
+    text-align: center;
+    h2{
+        font-size: 32px;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $baseColor;
+        letter-spacing: .96px;
+        position: relative;
+        padding-bottom: 10px;
+        span{
+            color: $dip;
+        }
+    }
+    p{
+        font-size: 16px;
+        line-height: 28px;
+        font-family: $open;
+        font-style: italic;
+        color: $dip;
+        letter-spacing: .48px;
+    }
+}
+.center_w_title{
+    padding-bottom: 60px;
+    text-align: center;
+    h2{
+        font-size: 32px;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: .96px;
+        position: relative;
+        padding-bottom: 10px;
+        span{
+            color: $baseColor;
+        }
+    }
+    p{
+        font-size: 16px;
+        line-height: 28px;
+        font-family: $open;
+        font-style: italic;
+        color: #fff;
+        letter-spacing: .48px;
+        opacity: .4;
+    }
+}
+.main_big_title{
+    text-align: center;
+    padding-bottom: 45px;
+    h2{
+        color: $baseColor;
+        font-family: $mon;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: .96px;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        position: relative;
+        span{
+            color: $dip; 
+        }
+        &:before{
+            content: "";
+            width: 70px;
+            background: #000;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            bottom: 0px;
+            position: absolute;
+        }
+    }
+    p{
+        font-size: 15px;
+        font-family: $open;
+        letter-spacing: .225px;
+        line-height: 26px;
+        color: $pfont;
+        padding-top: 25px;
+    }    
+}
+
+.resort_title{
+    padding-bottom: 15px;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 70px;
+        height: 1px;
+        background: #000000;
+    }
+    h2{
+        font-size: 32px;
+        font-weight: bold;
+        font-family: $mon;
+        letter-spacing: .96px;
+        text-transform: uppercase;
+        color: $dip;
+        padding-bottom: 10px;
+        span{
+            color: $baseColor;
+        }
+    }
+    h5{
+        font-size: 14px;
+        color: #a0a0a0;
+        font-family: $mon;
+        font-weight: bold;
+        letter-spacing: .42px;
+        text-transform: uppercase;
+    }
+}
+/* Main title css
+============================================================================================ */
+

@@ -1,0 +1,149 @@
+/* Footer Area css
+============================================================================================ */
+.footer_area{
+    
+}
+.footer_widget_area{
+    background: #2a292b;
+    padding: 80px 0px 50px 0px;
+}
+.f_widget{
+    
+}
+.f_title{
+    padding-bottom: 26px;
+    h3{
+        color: #fff;
+        opacity: .8;
+        text-transform: uppercase;
+        font-family: $mon;
+        font-size: 16px;
+        letter-spacing: .32px;
+        padding-bottom: 18px;
+        position: relative;
+        &:before{
+            content: "";
+            width: 40px;
+            height: 1px;
+            background: $baseColor;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+}
+.about_widget{
+    .ab_wd_list{
+        padding-right: 22px;
+        padding-top: 22px;
+        padding-bottom: 30px;
+        .media{
+            .media-left{
+                padding-right: 18px;
+                i{
+                    color: #757575;
+                    font-size: 22px;
+                }
+            }
+            .media-body{
+                h4{
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: .30px;
+                    font-family: $mon;
+                }
+            }
+            &:last-child{
+                .media-body{
+                    h4{
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family: $mon;
+                        letter-spacing: .40px;
+                    }
+                }
+            }    
+        }
+    }
+    .book_now_area{
+        margin-left: 37px;
+        .book_now_btn{
+            color: $dip;
+            &:hover{
+                color: $baseColor;
+            }
+        }
+    }
+}
+.link_widget{
+    padding-left: 50px;
+    ul{
+        margin-top: -10px;
+        li{
+            a{
+                font-size: 15px;
+                line-height: 35px;
+                color: #757575;
+                font-family: $open;
+                letter-spacing: .30px;
+                @include transition;
+            }
+            &:hover{
+                a{
+                    color: $baseColor;
+                }    
+            }
+        }
+    }
+}
+
+.instagram_widget{
+    .instagram_list{
+        margin: -2.5px;
+        overflow: hidden;
+        clear: both;
+        li{
+            float: left;
+            overflow: hidden;
+            width: calc(100% / 3);
+            a{
+                padding: 2.5px;
+                display: block;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.footer_copyright_area{
+    background: #222122;
+    padding: 25px 0px;
+    overflow: hidden;
+    .pull-left{
+        h4{
+            font-size: 15px;
+            font-family: $open;
+            color: #757575;
+            letter-spacing: .30px;
+        }
+    }
+    .pull-right{
+        h4{
+            font-size: 15px;
+            font-family: $open;
+            color: #757575;
+            letter-spacing: .30px;
+            a{
+                color: #757575;
+                @include transition;
+                &:hover{
+                    color: $baseColor;
+                }
+            }
+        }
+    }
+}
+/* End Footer Area css
+============================================================================================ */

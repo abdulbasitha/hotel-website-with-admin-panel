@@ -1,0 +1,39 @@
+/*font Variables*/
+$mon: 'Montserrat', sans-serif;
+$lato: 'Lato', sans-serif;
+$open: 'Open Sans', sans-serif;
+$pts: 'PT Sans', sans-serif;
+$pop: 'Poppins', sans-serif;
+/*Color Variables*/
+
+$baseColor: #ffb606;
+$dip: #242424;
+$gray: #363636;
+$pfont: #898989;
+
+
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+.col-md-offset-right-1,.col-lg-offset-right-1{
+    margin-right: 8.33333333%;
+}
+// Font family link
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900|Montserrat:200,300,400,400i,500,500i,600,700,800,900|Open+Sans:300,400,400i,600,600i,700,800|PT+Sans:400,400i,700,700i|Poppins:300,400,500,600,700');
+
+@font-face {
+    font-family: "ralH";
+    src: url(../fonts/theme-font/Arial.ttf.woff);
+}

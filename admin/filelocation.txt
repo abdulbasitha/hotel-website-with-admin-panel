@@ -1,0 +1,1 @@
+http://radixtouch.in/templates/admin/hotel/source/chat.html

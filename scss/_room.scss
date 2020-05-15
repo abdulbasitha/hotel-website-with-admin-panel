@@ -1,0 +1,570 @@
+/* Event Area css
+============================================================================================ */
+.room_list_area{
+    padding: 100px 0px;
+    .room_list_inner{
+        margin-bottom: -50px;
+    }
+}
+.room_list_item{
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 50px;
+    box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.09);
+    margin-left: 15px;
+    margin-right: 15px;
+    .room_img{
+        margin-left: -15px;
+        display: block;
+        position: relative;
+        &:before{
+            content: "";
+            background: rgba(0, 0, 0, .4);
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            @include transition;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .room_list_l_text{
+        h4{
+            font-size: 20px;
+            font-family: $mon;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $dip;
+            letter-spacing: .60px;
+            padding: 35px 0px 10px 0px;
+            @include transition;
+            &:hover{
+                color: $baseColor;
+            }
+        }
+        ul{
+            padding-bottom: 22px;
+            position: relative;
+            margin-bottom: 26px;
+            &:before{
+                content: "";
+                width: 53px;
+                height: 2px;
+                background: #eeeeee;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+            }
+            li{
+                display: inline-block;
+                a{
+                    font-size: 15px;
+                    color: $pfont;
+                    font-family: $open;
+                    letter-spacing: .225px;
+                    padding-right: 24px;
+                    position: relative;
+                    @include transition;
+                    &:before{
+                        content: "/";
+                        position: absolute;
+                        right: 8px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 15px;
+                        color: $pfont;
+                        font-family: $open;
+                        letter-spacing: .225px;
+                    }
+                }
+                &:last-child{
+                    a{
+                        padding-right: 0px;
+                        &:before{
+                            display: none;
+                        }    
+                    }
+                }
+                &:hover{
+                    a{
+                        color: $baseColor;
+                    }
+                }    
+            }
+        }
+        p{
+            font-size: 15px;
+            color: $pfont;
+            font-family: $open;
+            letter-spacing: .225px;
+            line-height: 28px;
+        }
+    }
+    .room_price_box{
+        background: #f5f5f5;
+        text-align: center;
+        padding: 60px 0px;
+        margin-top: 20px;
+        margin-right:5px;
+        h5{
+            font-size: 30px;
+            font-family: $mon;
+            font-weight: bold;
+            color: $dip;
+            letter-spacing: .90px;
+        }
+        h6{
+            font-size: 16px;
+            color: #a0a0a0;
+            font-family: $mon;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 8px 0px 30px 0px;
+        }
+        .book_now_btn{
+
+        }
+    }
+    &:hover{
+        .room_img{
+            &:before{
+                opacity: 1;
+            }
+        }
+    }
+}
+.room_pagination{
+    overflow: hidden;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -6px;
+    .pagination{
+        margin: 0px;
+        border-radius: 0px;
+        li{
+            margin-right: 18px;
+            display: inline-block;
+            a{
+                border-radius: 0px;
+                height: 48px;
+                padding: 0px;
+                width: 48px;
+                line-height: 44px;
+                border: 2px solid #dadada;
+                font-size: 20px;
+                color: #7e7e7e;
+                display: block;
+                background: transparent;
+                @include transition;
+            }
+            &:hover{
+                a{
+                    border-color: $baseColor;
+                    color: $baseColor;
+                }
+            }
+        }    
+    }    
+}
+
+/* Event Area css
+============================================================================================ */
+
+/* Search Right Side Area css
+============================================================================================ */
+.search_room_area{
+    padding: 100px 0px;
+}
+.search_right_sidebar{
+    position: relative;
+    padding-left: 20px;
+    .book_room_area{
+        position: relative;
+        .book_room_box{
+            text-align: left;
+            background: transparent;
+            border: 1px solid #dcdcdc;
+            .book_table_item{
+                h3{
+                    text-align: left;
+                    color: $dip;
+                    font-size: 20px;
+                }
+                .input-append{
+                    input{
+                        border-color: #dedede;
+                        color: #8c8c8c;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        @include placeholder{
+                            color: #8c8c8c;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            opacity: 1;
+                        }    
+                    }
+                    .add-on{
+                        i{
+                            color: #8c8c8c;
+                        }    
+                    }
+                }
+                .bootstrap-select{
+                    .dropdown-toggle{
+                        border-color: #dedede;
+                        span{
+                            color: #8c8c8c;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .book_now_btn{
+                    line-height: 44px;
+                }    
+            }
+        }
+    }
+    .book_now_button{
+        overflow: hidden;
+        clear: both;
+        margin: 0px 0px 50px 0px;
+        padding-top: 50px;
+        .book_now_btn_black{
+            display: block;
+            background: #3b3b3b;
+            &:hover{
+                background: transparent;
+            }    
+        }    
+    } 
+    .your_book_box{
+        border: 1px solid #dcdcdc;
+        padding: 40px 0px 45px 18px;
+        h4{
+            font-size: 20px;
+            font-family: $mon;
+            font-weight: bold;
+            color: $dip;
+            text-transform: uppercase;
+            letter-spacing: .60px;
+            padding-bottom: 15px;
+        }
+        h5{
+            font-size: 15px;
+            font-family: $mon;
+            font-weight: 600;
+            color: #a0a0a0;
+            text-transform: uppercase;
+            letter-spacing: .45px;
+        }    
+    }    
+}
+/* End Search Right Side Area css
+============================================================================================ */
+
+/* Search Room Area css
+============================================================================================ */
+.s_room_item{
+    margin-bottom: 50px !important;
+    .s_room_left_img{
+        img{
+            max-width: 100%;
+        }
+    }
+    .s_room_right_text{
+        padding-top: 35px;
+        box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.09);
+        margin-left: -30px;
+        padding-left: 30px;
+        min-height: 283px;
+        h4{
+            font-size: 20px;
+            font-family: $mon;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $dip;
+            letter-spacing: .60px;
+            padding-bottom: 25px;
+        }
+        ul{
+            li{
+                width: calc(100% / 2);
+                float: left;
+                margin-bottom: 26px;
+                font-size: 14px;
+                font-family: $mon;
+                text-transform: uppercase;
+                color: #a0a0a0;
+                letter-spacing: .42px;
+                font-weight: bold;
+                a{
+                    font-size: 14px;
+                    font-family: $mon;
+                    text-transform: uppercase;
+                    color: #a0a0a0;
+                    letter-spacing: .42px;
+                    font-weight: bold;
+                    span{
+                        display: block;
+                        font-size: 14px;
+                        font-family: $open;
+                        text-transform: lowercase;
+                        font-weight: normal;
+                        color: #bdbdbd;
+                        letter-spacing: .42px;
+                    } 
+                }
+                .bootstrap-select{
+                    width: auto !important;
+                    .dropdown-toggle{
+                        display: inline-block;
+                        padding: 0px;
+                        border: none;
+                        background: transparent;
+                        outline: none !important;
+                        box-shadow: none !important;
+                        span{
+                            color: $baseColor;
+                            font-family: $mon;
+                            font-weight: bold;
+                            font-size: 15px;
+                            letter-spacing: .45px;
+                        }
+                        .bs-caret{
+                            position: relative;
+                            left: 24px;
+                            top: 0px;
+                            .caret{
+                                border-top: 5px dashed;
+                                border-top: 5px solid;
+                                border-right: 5px solid transparent;
+                                border-left: 5px solid transparent;
+                                color: #a0a0a0;
+                            }
+                        }
+                    }
+                    .dropdown-menu{
+                        margin: 0px;
+                        padding: 0px;
+                        border-radius: 0px;
+                        border: none;
+                        width: 112px !important;
+                        .dropdown-menu{
+                            li{
+                                width: 100%;
+                                margin-bottom: 0px;
+                                a{
+                                    display: block;
+                                    line-height: 30px;
+                                    padding: 0px 15px 0px 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .book_now_btn{
+            margin-top: 4px;
+            padding: 0px 16px;
+            line-height: 40px;
+        }
+    }
+}
+/* End Search Room Area css
+============================================================================================ */
+
+/* Room Details Area css
+============================================================================================ */
+.room_details_area{
+    padding: 100px 0px;
+}
+.room_d_main_text{
+    padding-bottom: 70px;
+    .room_details_img{
+        .owl-prev, .owl-next{
+            height: 65px;
+            width: 65px;
+            background: #fff;
+            text-align: center;
+            line-height: 62px;
+            font-size: 28px;
+            color: #7e7e7e;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+            cursor: pointer;
+            @include transition;
+            &:hover{
+                background: $baseColor;
+                color: #fff;
+            }
+        }
+        .owl-prev{
+            left: 0px;
+        }
+        .owl-next{
+            right: 0px;
+        }
+    }
+    h4{
+        font-size: 32px;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .96px;
+        color: $dip;
+        padding: 45px 0px 20px 0px;
+        span{
+            color: $baseColor;
+        }
+    }
+    h5{
+        font-size: 20px;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .60px;
+        color: $dip;
+        span{
+            color: #a0a0a0;
+            font-family: $mon;
+            font-weight: normal;
+            font-size: 14px;
+        }
+    }
+    p{
+        color: #a0a0a0;
+        font-family: $open;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 28px;
+        letter-spacing: .30;
+        padding-top: 28px;
+    }
+}
+
+.room_d_title{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: $mon;
+    font-weight: bold;
+    letter-spacing: .66px;
+    color: $dip;
+    padding-bottom: 30px;
+}
+
+.room_service_list{
+      
+}
+.room_service_list_inner{
+    .resot_list{
+        max-width: 270px;
+        ul{
+            li{
+                a{
+                    font-size: 15px;
+                    font-weight: 600;
+                    font-family: $mon;
+                    text-transform: uppercase;
+                    padding-left: 32px;
+                    color: #a0a0a0;
+                }
+            }
+        }
+    }
+}
+.room_details_clients{
+    border-bottom: 1px solid #d0d0d0;
+    margin-top: 65px;
+    .clients_slider{
+        padding: 0px;
+        border: none;
+        .item{
+            .media{
+                padding-right: 20px;
+                padding-bottom: 55px;
+                .media-left{
+                    padding-right: 30px;
+                }
+                .media-body{
+                    padding-right: 0px;
+                    p{
+                        font-size: 15px;
+                        line-height: 28px;
+                        color: $pfont;
+                    }
+                    h4{
+                        padding-top: 18px;
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }    
+}
+.room_details_comment{
+    padding-top: 45px;
+    h4{
+        font-size: 15px;
+        font-family: $mon;
+        font-weight: bold;
+        color: $baseColor;
+        text-transform: uppercase;
+        letter-spacing: .45px;
+        padding-bottom: 30px;
+    }
+    .contact_us_form{
+        .form-group{
+            input{
+                font-size: 15px;
+                color: $pfont;
+                font-weight: bold;
+                font-family: $mon;
+                @include placeholder{
+                    font-size: 15px;
+                    color: $pfont;
+                    font-weight: bold;
+                    font-family: $mon;
+                }
+            }
+            textarea{
+                font-size: 15px;
+                color: $pfont;
+                font-weight: bold;
+                font-family: $mon;
+                @include placeholder{
+                    font-size: 15px;
+                    color: $pfont;
+                    font-weight: bold;
+                    font-family: $mon;
+                }
+            }
+            h5{
+                display: inline-block;
+                font-size: 15px;
+                font-family: $mon;
+                color: $pfont;
+                text-transform: uppercase;
+                padding-right: 15px;
+                padding-bottom: 35px;
+                padding-top: 15px;
+            }
+            ul{
+                display: inline-block;
+                li{
+                    display: inline-block;
+                    a{
+                        color: $baseColor;
+                    }
+                }
+            }
+        }    
+    }
+}
+/* End Room Details Area css
+============================================================================================ */
